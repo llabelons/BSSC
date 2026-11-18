@@ -33,7 +33,7 @@ def test_socios_recep(page: Page):
         zona_filtros.get_by_text(estado, exact=True).click()
         page.wait_for_timeout(100)
         
-    # 5. Buscar el contenedor que dice NUEVO TITULAR y hacer clic en el botón naranja real que tiene adentro
+    # 5. Buscar el contenedor que dice NUEVO TITULAR y hacer clic en el botón naranja que tiene adentro
     page.get_by_text("NUEVO TITULAR").locator("..").get_by_role("button").click()
     page.wait_for_timeout(300)
 

@@ -18,3 +18,6 @@ def test_login_exitoso_con_email_y_password(page):
     # Verificaciones
     expect(page).not_to_have_url(re.compile(r".*/login.*"))
     expect(page.locator("#auth-password-email")).not_to_be_visible()
+
+    #Nos dirigimos hacia la interfaz de "QR"
+    

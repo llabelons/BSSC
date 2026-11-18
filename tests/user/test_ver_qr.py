@@ -36,4 +36,4 @@ def test_visualizacion_codigo_qr_y_navegacion_actividades(page):
     expect(page).to_have_url(re.compile(r".*/actividades.*"), timeout=7000)
 
     # 6. Mantenemos el navegador abierto en la pantalla de actividades por 5 segundos (5000 milisegundos)
-    page.wait_for_timeout(1500)
+    page.wait_for_timeout(15s00)

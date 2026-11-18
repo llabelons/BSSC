@@ -50,7 +50,7 @@ def test_eventos_recep(page: Page):
         "racing independiente",
         "recital rock",
         "final copa",
-    ]
+    ]s
     evento_aleatorio = random.choice(eventos_posibles)
 
     buscador = page.get_by_role("searchbox", name="BUSCAR EVENTO")
